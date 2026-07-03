@@ -82,3 +82,49 @@ Once email is live, update the `tel` href in `index.html` booking section and fo
 Also wire up the booking form to Formspree (see Formspree section above) using the live email.
 
 **Recommended path:** Namecheap for domain + Zoho Mail free tier to start.
+
+---
+
+## Web Agency Operations (Managing Multiple Clients)
+
+### Domains
+- **Cloudflare Registrar** — at-cost pricing, excellent DNS, free to use across all clients (recommended)
+- **Namecheap Reseller** — wholesale pricing, single dashboard for all client domains
+- **Rule:** Always register domains in the client's name/account, not yours. You manage it on their behalf — if they leave, the domain goes with them cleanly.
+
+### Email
+- **Google Workspace Reseller** — manage all client email from one admin panel, built-in billing margin
+- **Zoho Mail Partner Program** — multi-domain management, good free starting tier
+
+### Hosting (Static Sites)
+- **Netlify** — free tier per site, simple per-client deployment, easy custom domain setup
+- **Cloudflare Pages** — free, fast, pairs perfectly with Cloudflare Registrar
+
+### Code
+- **GitHub** — one repo per client site (like this one), keep all repos under your GitHub account or transfer to client account when needed
+
+### Recommended Stack Per Client
+
+| Tool | Purpose |
+|------|---------|
+| Cloudflare | Domain registration + DNS |
+| Netlify or Cloudflare Pages | Static site hosting |
+| Google Workspace Reseller | Client email accounts |
+| GitHub | One repo per client site |
+
+### Client Tracking (Most Important)
+Keep a master spreadsheet or Notion doc with the following for every client:
+
+| Field | Example |
+|-------|---------|
+| Client name | YABS Luxury Transportation |
+| Domain | yabsluxury.com |
+| Domain expiry date | 2027-07-03 |
+| Registrar | Cloudflare |
+| Hosting | Netlify |
+| Hosting URL | yabs.netlify.app |
+| Email provider | Zoho / Google Workspace |
+| GitHub repo | github.com/mexuscloud/yabs-luxury-transportation |
+| Email addresses | reservations@yabsluxury.com |
+
+> ⚠️ Domains expiring without notice is the #1 way agencies lose clients. Set calendar reminders 60 days before every domain expiry.
