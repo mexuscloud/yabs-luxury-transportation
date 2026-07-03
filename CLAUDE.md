@@ -53,3 +53,32 @@ git push
 ```
 
 Remote: `https://github.com/mexuscloud/yabs-luxury-transportation`
+
+---
+
+## Pending: Email Setup (reservations@yabsluxury.com)
+
+The email address in the site is a placeholder. To make it live:
+
+**Step 1 — Buy the domain `yabsluxury.com`**
+- Namecheap (namecheap.com) — ~$10/year (recommended)
+- Google Domains (squarespace.com/domains) — ~$12/year
+- GoDaddy — ~$12/year
+
+**Step 2 — Set up a business email host**
+- **Zoho Mail** — free tier for 1 user, good starting point
+- **Google Workspace** — $6/month, Gmail interface with custom domain
+
+**Step 3 — Connect domain to email host**
+- The email host will provide MX records
+- Add those MX records to your domain's DNS settings at your registrar
+- Both Zoho and Google Workspace walk you through this step by step
+
+**Step 4 — Update the website**
+Once email is live, update the `tel` href in `index.html` booking section and footer:
+```html
+<a href="mailto:reservations@yabsluxury.com">reservations@yabsluxury.com</a>
+```
+Also wire up the booking form to Formspree (see Formspree section above) using the live email.
+
+**Recommended path:** Namecheap for domain + Zoho Mail free tier to start.
