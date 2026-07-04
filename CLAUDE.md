@@ -92,6 +92,31 @@ Also wire up the booking form to Formspree (see Formspree section above) using t
 - **Namecheap Reseller** — wholesale pricing, single dashboard for all client domains
 - **Rule:** Always register domains in the client's name/account, not yours. You manage it on their behalf — if they leave, the domain goes with them cleanly.
 
+#### Domain Ownership — Detailed Explanation
+
+**❌ Wrong way — register in YOUR account**
+- You buy the domain on your own Namecheap/Cloudflare account
+- The domain is legally yours
+- If the client stops paying or moves to another developer, you hold the domain hostage (intentionally or not)
+- If something happens to your account, their business is affected
+- Creates legal and trust problems
+
+**✅ Right way — register in THEIR account**
+- Create a Cloudflare/Namecheap account *for the client* using their email and billing info
+- The domain is legally theirs from day one
+- Ask them to add you as an admin/team member so you can manage DNS on their behalf
+- If they leave you, remove yourself — their domain and email keep working without interruption
+- No disputes, no leverage, clean separation
+
+**How to get admin access without owning the account:**
+- **Cloudflare** → client's account → Members → invite your email as Admin
+- **Namecheap** → client's account → Profile → Manage Users → add your email
+
+You get full control to update DNS, connect hosting, set up email — without owning the asset.
+
+**The business reason:**
+Clients trust you more when they know they own everything. Use it as a selling point — *"You own your domain and email. I just manage it for you."* Agencies that hold domains hostage develop a bad reputation fast.
+
 ### Email
 - **Google Workspace Reseller** — manage all client email from one admin panel, built-in billing margin
 - **Zoho Mail Partner Program** — multi-domain management, good free starting tier
